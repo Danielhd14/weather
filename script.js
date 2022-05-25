@@ -28,5 +28,6 @@ async function getWeather(city) {
 </div>
     `
 }
-
-
+document.addEventListener('DOMContentLoaded',()=>{
+    getWeather('port Harcourt')
+})
