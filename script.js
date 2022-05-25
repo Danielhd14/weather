@@ -12,7 +12,7 @@ async function getWeather(city) {
     const response = await fetch(url + city + "&units=metric&appid=" + apiKey, option);
     const data = await response.json();
     console.log(data)
-    if(document.body.childElementCount < 3){
+    if(document.body.childElementCount < 2){
         console.log(document.body.childElementCount)
     document.body.innerHTML += `
     <div class="info" id="info">
